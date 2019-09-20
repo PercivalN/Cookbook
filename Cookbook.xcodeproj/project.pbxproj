@@ -11,6 +11,8 @@
 		DD45E46B23351674005174FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD45E46923351674005174FD /* Main.storyboard */; };
 		DD45E46D23351677005174FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD45E46C23351677005174FD /* Assets.xcassets */; };
 		DD45E47023351677005174FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD45E46E23351677005174FD /* LaunchScreen.storyboard */; };
+		DD45E47823351E6D005174FD /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD45E47723351E6D005174FD /* RecipesTableViewController.swift */; };
+		DD45E47A23351E87005174FD /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD45E47923351E87005174FD /* AddRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		DD45E46C23351677005174FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD45E46F23351677005174FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD45E47123351677005174FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD45E47723351E6D005174FD /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		DD45E47923351E87005174FD /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +56,39 @@
 		DD45E46423351674005174FD /* Cookbook */ = {
 			isa = PBXGroup;
 			children = (
-				DD45E46523351674005174FD /* AppDelegate.swift */,
-				DD45E46923351674005174FD /* Main.storyboard */,
-				DD45E46C23351677005174FD /* Assets.xcassets */,
-				DD45E46E23351677005174FD /* LaunchScreen.storyboard */,
-				DD45E47123351677005174FD /* Info.plist */,
+				DD45E47D23351F45005174FD /* Resources */,
+				DD45E47C23351F27005174FD /* Storyboards */,
+				DD45E47B23351F0C005174FD /* View Controllers */,
 			);
 			path = Cookbook;
+			sourceTree = "<group>";
+		};
+		DD45E47B23351F0C005174FD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD45E47723351E6D005174FD /* RecipesTableViewController.swift */,
+				DD45E47923351E87005174FD /* AddRecipeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD45E47C23351F27005174FD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DD45E46923351674005174FD /* Main.storyboard */,
+				DD45E46E23351677005174FD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DD45E47D23351F45005174FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD45E46523351674005174FD /* AppDelegate.swift */,
+				DD45E46C23351677005174FD /* Assets.xcassets */,
+				DD45E47123351677005174FD /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD45E47A23351E87005174FD /* AddRecipeViewController.swift in Sources */,
+				DD45E47823351E6D005174FD /* RecipesTableViewController.swift in Sources */,
 				DD45E46623351674005174FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T87Y8KB3R4;
-				INFOPLIST_FILE = Cookbook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Cookbook/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T87Y8KB3R4;
-				INFOPLIST_FILE = Cookbook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Cookbook/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

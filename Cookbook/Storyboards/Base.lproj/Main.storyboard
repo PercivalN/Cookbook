@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Recipes Table View Controller-->
         <scene sceneID="zQE-Ce-scW">
             <objects>
-                <tableViewController id="MdQ-i7-bzQ" sceneMemberID="viewController">
+                <tableViewController id="MdQ-i7-bzQ" customClass="RecipesTableViewController" customModule="Cookbook" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SUH-jD-guz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
         <!--Create Recipe-->
         <scene sceneID="Iny-YE-R9w">
             <objects>
-                <viewController id="Ir4-Mh-Fwb" sceneMemberID="viewController">
+                <viewController id="Ir4-Mh-Fwb" customClass="AddRecipeViewController" customModule="Cookbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="58M-eH-cST">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
